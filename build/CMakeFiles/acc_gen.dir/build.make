@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /n/eecs583b/home/marcusvc/cse583/register_alloc
+CMAKE_SOURCE_DIR = /n/eecs583a/home/erzh/EECS_583
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /n/eecs583b/home/marcusvc/cse583/register_alloc/build
+CMAKE_BINARY_DIR = /n/eecs583a/home/erzh/EECS_583/build
 
 # Utility rule file for acc_gen.
 
@@ -78,6 +78,6 @@ CMakeFiles/acc_gen.dir/clean:
 .PHONY : CMakeFiles/acc_gen.dir/clean
 
 CMakeFiles/acc_gen.dir/depend:
-	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /n/eecs583b/home/marcusvc/cse583/register_alloc /n/eecs583b/home/marcusvc/cse583/register_alloc /n/eecs583b/home/marcusvc/cse583/register_alloc/build /n/eecs583b/home/marcusvc/cse583/register_alloc/build /n/eecs583b/home/marcusvc/cse583/register_alloc/build/CMakeFiles/acc_gen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /n/eecs583a/home/erzh/EECS_583/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /n/eecs583a/home/erzh/EECS_583 /n/eecs583a/home/erzh/EECS_583 /n/eecs583a/home/erzh/EECS_583/build /n/eecs583a/home/erzh/EECS_583/build /n/eecs583a/home/erzh/EECS_583/build/CMakeFiles/acc_gen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/acc_gen.dir/depend
 

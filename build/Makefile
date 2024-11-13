@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /n/eecs583b/home/marcusvc/cse583/register_alloc
+CMAKE_SOURCE_DIR = /n/eecs583a/home/erzh/EECS_583
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /n/eecs583b/home/marcusvc/cse583/register_alloc/build
+CMAKE_BINARY_DIR = /n/eecs583a/home/erzh/EECS_583/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /n/eecs583b/home/marcusvc/cse583/register_alloc/build/CMakeFiles /n/eecs583b/home/marcusvc/cse583/register_alloc/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /n/eecs583a/home/erzh/EECS_583/build/CMakeFiles /n/eecs583a/home/erzh/EECS_583/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /n/eecs583b/home/marcusvc/cse583/register_alloc/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /n/eecs583a/home/erzh/EECS_583/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -223,7 +223,7 @@ HW2Pass: cmake_check_build_system
 
 # fast build rule for target.
 HW2Pass/fast:
-	$(MAKE) $(MAKESILENT) -f hw2pass/CMakeFiles/HW2Pass.dir/build.make hw2pass/CMakeFiles/HW2Pass.dir/build
+	$(MAKE) $(MAKESILENT) -f datapass/CMakeFiles/HW2Pass.dir/build.make datapass/CMakeFiles/HW2Pass.dir/build
 .PHONY : HW2Pass/fast
 
 #=============================================================================
@@ -236,7 +236,7 @@ install-HW2Pass: cmake_check_build_system
 
 # fast build rule for target.
 install-HW2Pass/fast:
-	$(MAKE) $(MAKESILENT) -f hw2pass/CMakeFiles/install-HW2Pass.dir/build.make hw2pass/CMakeFiles/install-HW2Pass.dir/build
+	$(MAKE) $(MAKESILENT) -f datapass/CMakeFiles/install-HW2Pass.dir/build.make datapass/CMakeFiles/install-HW2Pass.dir/build
 .PHONY : install-HW2Pass/fast
 
 #=============================================================================
@@ -249,7 +249,7 @@ install-HW2Pass-stripped: cmake_check_build_system
 
 # fast build rule for target.
 install-HW2Pass-stripped/fast:
-	$(MAKE) $(MAKESILENT) -f hw2pass/CMakeFiles/install-HW2Pass-stripped.dir/build.make hw2pass/CMakeFiles/install-HW2Pass-stripped.dir/build
+	$(MAKE) $(MAKESILENT) -f datapass/CMakeFiles/install-HW2Pass-stripped.dir/build.make datapass/CMakeFiles/install-HW2Pass-stripped.dir/build
 .PHONY : install-HW2Pass-stripped/fast
 
 # Help Target
