@@ -1,4 +1,4 @@
-# Install script for directory: /n/eecs583b/home/marcusvc/cse583/hw2/hw2pass
+# Install script for directory: /n/eecs583b/home/marcusvc/cse583/register_alloc/hw2pass
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xHW2Passx" OR NOT CMAKE_INSTALL_COMP
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/HW2Pass.so"
          RPATH "\$ORIGIN/../lib")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE MODULE FILES "/n/eecs583b/home/marcusvc/cse583/hw2/build/hw2pass/HW2Pass.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE MODULE FILES "/n/eecs583b/home/marcusvc/cse583/register_alloc/build/hw2pass/HW2Pass.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/HW2Pass.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/HW2Pass.so")
     file(RPATH_CHANGE

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /n/eecs583b/home/marcusvc/cse583/hw2
+CMAKE_SOURCE_DIR = /n/eecs583b/home/marcusvc/cse583/register_alloc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /n/eecs583b/home/marcusvc/cse583/hw2/build
+CMAKE_BINARY_DIR = /n/eecs583b/home/marcusvc/cse583/register_alloc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /n/eecs583b/home/marcusvc/cse583/hw2/build && $(CMAKE_COMMAND) -E cmake_progress_start /n/eecs583b/home/marcusvc/cse583/hw2/build/CMakeFiles /n/eecs583b/home/marcusvc/cse583/hw2/build/hw2pass//CMakeFiles/progress.marks
-	cd /n/eecs583b/home/marcusvc/cse583/hw2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw2pass/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /n/eecs583b/home/marcusvc/cse583/hw2/build/CMakeFiles 0
+	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build && $(CMAKE_COMMAND) -E cmake_progress_start /n/eecs583b/home/marcusvc/cse583/register_alloc/build/CMakeFiles /n/eecs583b/home/marcusvc/cse583/register_alloc/build/hw2pass//CMakeFiles/progress.marks
+	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw2pass/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /n/eecs583b/home/marcusvc/cse583/register_alloc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /n/eecs583b/home/marcusvc/cse583/hw2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw2pass/clean
+	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw2pass/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /n/eecs583b/home/marcusvc/cse583/hw2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw2pass/preinstall
+	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw2pass/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /n/eecs583b/home/marcusvc/cse583/hw2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw2pass/preinstall
+	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw2pass/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /n/eecs583b/home/marcusvc/cse583/hw2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 hw2pass/CMakeFiles/HW2Pass.dir/rule:
-	cd /n/eecs583b/home/marcusvc/cse583/hw2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw2pass/CMakeFiles/HW2Pass.dir/rule
+	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw2pass/CMakeFiles/HW2Pass.dir/rule
 .PHONY : hw2pass/CMakeFiles/HW2Pass.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ HW2Pass: hw2pass/CMakeFiles/HW2Pass.dir/rule
 
 # fast build rule for target.
 HW2Pass/fast:
-	cd /n/eecs583b/home/marcusvc/cse583/hw2/build && $(MAKE) $(MAKESILENT) -f hw2pass/CMakeFiles/HW2Pass.dir/build.make hw2pass/CMakeFiles/HW2Pass.dir/build
+	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build && $(MAKE) $(MAKESILENT) -f hw2pass/CMakeFiles/HW2Pass.dir/build.make hw2pass/CMakeFiles/HW2Pass.dir/build
 .PHONY : HW2Pass/fast
 
 # Convenience name for target.
 hw2pass/CMakeFiles/install-HW2Pass.dir/rule:
-	cd /n/eecs583b/home/marcusvc/cse583/hw2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw2pass/CMakeFiles/install-HW2Pass.dir/rule
+	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw2pass/CMakeFiles/install-HW2Pass.dir/rule
 .PHONY : hw2pass/CMakeFiles/install-HW2Pass.dir/rule
 
 # Convenience name for target.
@@ -186,12 +186,12 @@ install-HW2Pass: hw2pass/CMakeFiles/install-HW2Pass.dir/rule
 
 # fast build rule for target.
 install-HW2Pass/fast:
-	cd /n/eecs583b/home/marcusvc/cse583/hw2/build && $(MAKE) $(MAKESILENT) -f hw2pass/CMakeFiles/install-HW2Pass.dir/build.make hw2pass/CMakeFiles/install-HW2Pass.dir/build
+	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build && $(MAKE) $(MAKESILENT) -f hw2pass/CMakeFiles/install-HW2Pass.dir/build.make hw2pass/CMakeFiles/install-HW2Pass.dir/build
 .PHONY : install-HW2Pass/fast
 
 # Convenience name for target.
 hw2pass/CMakeFiles/install-HW2Pass-stripped.dir/rule:
-	cd /n/eecs583b/home/marcusvc/cse583/hw2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw2pass/CMakeFiles/install-HW2Pass-stripped.dir/rule
+	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw2pass/CMakeFiles/install-HW2Pass-stripped.dir/rule
 .PHONY : hw2pass/CMakeFiles/install-HW2Pass-stripped.dir/rule
 
 # Convenience name for target.
@@ -200,7 +200,7 @@ install-HW2Pass-stripped: hw2pass/CMakeFiles/install-HW2Pass-stripped.dir/rule
 
 # fast build rule for target.
 install-HW2Pass-stripped/fast:
-	cd /n/eecs583b/home/marcusvc/cse583/hw2/build && $(MAKE) $(MAKESILENT) -f hw2pass/CMakeFiles/install-HW2Pass-stripped.dir/build.make hw2pass/CMakeFiles/install-HW2Pass-stripped.dir/build
+	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build && $(MAKE) $(MAKESILENT) -f hw2pass/CMakeFiles/install-HW2Pass-stripped.dir/build.make hw2pass/CMakeFiles/install-HW2Pass-stripped.dir/build
 .PHONY : install-HW2Pass-stripped/fast
 
 hw2pass.o: hw2pass.cpp.o
@@ -208,7 +208,7 @@ hw2pass.o: hw2pass.cpp.o
 
 # target to build an object file
 hw2pass.cpp.o:
-	cd /n/eecs583b/home/marcusvc/cse583/hw2/build && $(MAKE) $(MAKESILENT) -f hw2pass/CMakeFiles/HW2Pass.dir/build.make hw2pass/CMakeFiles/HW2Pass.dir/hw2pass.cpp.o
+	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build && $(MAKE) $(MAKESILENT) -f hw2pass/CMakeFiles/HW2Pass.dir/build.make hw2pass/CMakeFiles/HW2Pass.dir/hw2pass.cpp.o
 .PHONY : hw2pass.cpp.o
 
 hw2pass.i: hw2pass.cpp.i
@@ -216,7 +216,7 @@ hw2pass.i: hw2pass.cpp.i
 
 # target to preprocess a source file
 hw2pass.cpp.i:
-	cd /n/eecs583b/home/marcusvc/cse583/hw2/build && $(MAKE) $(MAKESILENT) -f hw2pass/CMakeFiles/HW2Pass.dir/build.make hw2pass/CMakeFiles/HW2Pass.dir/hw2pass.cpp.i
+	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build && $(MAKE) $(MAKESILENT) -f hw2pass/CMakeFiles/HW2Pass.dir/build.make hw2pass/CMakeFiles/HW2Pass.dir/hw2pass.cpp.i
 .PHONY : hw2pass.cpp.i
 
 hw2pass.s: hw2pass.cpp.s
@@ -224,7 +224,7 @@ hw2pass.s: hw2pass.cpp.s
 
 # target to generate assembly for a file
 hw2pass.cpp.s:
-	cd /n/eecs583b/home/marcusvc/cse583/hw2/build && $(MAKE) $(MAKESILENT) -f hw2pass/CMakeFiles/HW2Pass.dir/build.make hw2pass/CMakeFiles/HW2Pass.dir/hw2pass.cpp.s
+	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build && $(MAKE) $(MAKESILENT) -f hw2pass/CMakeFiles/HW2Pass.dir/build.make hw2pass/CMakeFiles/HW2Pass.dir/hw2pass.cpp.s
 .PHONY : hw2pass.cpp.s
 
 # Help Target
@@ -256,6 +256,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /n/eecs583b/home/marcusvc/cse583/hw2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

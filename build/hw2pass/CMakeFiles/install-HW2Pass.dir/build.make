@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /n/eecs583b/home/marcusvc/cse583/hw2
+CMAKE_SOURCE_DIR = /n/eecs583b/home/marcusvc/cse583/register_alloc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /n/eecs583b/home/marcusvc/cse583/hw2/build
+CMAKE_BINARY_DIR = /n/eecs583b/home/marcusvc/cse583/register_alloc/build
 
 # Utility rule file for install-HW2Pass.
 
@@ -67,7 +67,7 @@ include hw2pass/CMakeFiles/install-HW2Pass.dir/compiler_depend.make
 include hw2pass/CMakeFiles/install-HW2Pass.dir/progress.make
 
 hw2pass/CMakeFiles/install-HW2Pass:
-	cd /n/eecs583b/home/marcusvc/cse583/hw2/build/hw2pass && /usr/bin/cmake -DCMAKE_INSTALL_COMPONENT="HW2Pass" -P /n/eecs583b/home/marcusvc/cse583/hw2/build/cmake_install.cmake
+	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build/hw2pass && /usr/bin/cmake -DCMAKE_INSTALL_COMPONENT="HW2Pass" -P /n/eecs583b/home/marcusvc/cse583/register_alloc/build/cmake_install.cmake
 
 install-HW2Pass: hw2pass/CMakeFiles/install-HW2Pass
 install-HW2Pass: hw2pass/CMakeFiles/install-HW2Pass.dir/build.make
@@ -78,10 +78,10 @@ hw2pass/CMakeFiles/install-HW2Pass.dir/build: install-HW2Pass
 .PHONY : hw2pass/CMakeFiles/install-HW2Pass.dir/build
 
 hw2pass/CMakeFiles/install-HW2Pass.dir/clean:
-	cd /n/eecs583b/home/marcusvc/cse583/hw2/build/hw2pass && $(CMAKE_COMMAND) -P CMakeFiles/install-HW2Pass.dir/cmake_clean.cmake
+	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build/hw2pass && $(CMAKE_COMMAND) -P CMakeFiles/install-HW2Pass.dir/cmake_clean.cmake
 .PHONY : hw2pass/CMakeFiles/install-HW2Pass.dir/clean
 
 hw2pass/CMakeFiles/install-HW2Pass.dir/depend:
-	cd /n/eecs583b/home/marcusvc/cse583/hw2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /n/eecs583b/home/marcusvc/cse583/hw2 /n/eecs583b/home/marcusvc/cse583/hw2/hw2pass /n/eecs583b/home/marcusvc/cse583/hw2/build /n/eecs583b/home/marcusvc/cse583/hw2/build/hw2pass /n/eecs583b/home/marcusvc/cse583/hw2/build/hw2pass/CMakeFiles/install-HW2Pass.dir/DependInfo.cmake --color=$(COLOR)
+	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /n/eecs583b/home/marcusvc/cse583/register_alloc /n/eecs583b/home/marcusvc/cse583/register_alloc/hw2pass /n/eecs583b/home/marcusvc/cse583/register_alloc/build /n/eecs583b/home/marcusvc/cse583/register_alloc/build/hw2pass /n/eecs583b/home/marcusvc/cse583/register_alloc/build/hw2pass/CMakeFiles/install-HW2Pass.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : hw2pass/CMakeFiles/install-HW2Pass.dir/depend
 

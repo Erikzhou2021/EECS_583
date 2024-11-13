@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /n/eecs583b/home/marcusvc/cse583/hw2
+CMAKE_SOURCE_DIR = /n/eecs583b/home/marcusvc/cse583/register_alloc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /n/eecs583b/home/marcusvc/cse583/hw2/build
+CMAKE_BINARY_DIR = /n/eecs583b/home/marcusvc/cse583/register_alloc/build
 
 # Utility rule file for RISCVTargetParserTableGen.
 
@@ -78,6 +78,6 @@ CMakeFiles/RISCVTargetParserTableGen.dir/clean:
 .PHONY : CMakeFiles/RISCVTargetParserTableGen.dir/clean
 
 CMakeFiles/RISCVTargetParserTableGen.dir/depend:
-	cd /n/eecs583b/home/marcusvc/cse583/hw2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /n/eecs583b/home/marcusvc/cse583/hw2 /n/eecs583b/home/marcusvc/cse583/hw2 /n/eecs583b/home/marcusvc/cse583/hw2/build /n/eecs583b/home/marcusvc/cse583/hw2/build /n/eecs583b/home/marcusvc/cse583/hw2/build/CMakeFiles/RISCVTargetParserTableGen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /n/eecs583b/home/marcusvc/cse583/register_alloc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /n/eecs583b/home/marcusvc/cse583/register_alloc /n/eecs583b/home/marcusvc/cse583/register_alloc /n/eecs583b/home/marcusvc/cse583/register_alloc/build /n/eecs583b/home/marcusvc/cse583/register_alloc/build /n/eecs583b/home/marcusvc/cse583/register_alloc/build/CMakeFiles/RISCVTargetParserTableGen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/RISCVTargetParserTableGen.dir/depend
 

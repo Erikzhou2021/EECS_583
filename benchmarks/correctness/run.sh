@@ -4,10 +4,12 @@
 # e.g. sh run.sh hw2correct1
 
 # ACTION NEEDED: If the path is different, please update it here.
-PATH2LIB="../../build/hw2pass/HW2Pass.so"        # Specify your build directory in the project
+# PATH2LIB="../../build/hw2pass/HW2Pass.so"        # Specify your build directory in the project
+
+PATH2LIB="/n/eecs583b/home/marcusvc/cse583/register_alloc/build/hw2pass/HW2Pass.so"
 
 # ACTION NEEDED: Choose the correct pass when running.
-PASS=fplicm-correctness                   # Choose either -fplicm-correctness ...
+PASS=reg-mapping               # Choose either -fplicm-correctness ...
 # PASS=fplicm-performance                 # ... or -fplicm-performance
 
 # Delete outputs from previous runs. Update this when you want to retain some files.
@@ -17,10 +19,10 @@ rm -f default.profraw *_prof *_fplicm *.bc *.profdata *_output *.ll
 clang -emit-llvm -c ${1}.c -Xclang -disable-O0-optnone -o ${1}.bc
 
 # Canonicalize natural loops (Ref: llvm.org/doxygen/LoopSimplify_8h_source.html)
-opt -passes='loop-simplify' ${1}.bc -o ${1}.ls.bc
+# opt -passes='loop-simplify' ${1}.bc -o ${1}.ls.bc
 
 # Instrument profiler passes.
-opt -passes='pgo-instr-gen,instrprof' ${1}.ls.bc -o ${1}.ls.prof.bc
+# opt -passes='pgo-instr-gen,instrprof' ${1}.ls.bc -o ${1}.ls.prof.bc
 
 # Note: We are using the New Pass Manager for these passes! 
 
@@ -29,6 +31,9 @@ clang -fprofile-instr-generate ${1}.ls.prof.bc -o ${1}_prof
 
 # When we run the profiler embedded executable, it generates a default.profraw file that contains the profile data.
 ./${1}_prof > correct_output
+
+# llc -mattr=+reg-mapping ${1}.bc -o output.s
+
 
 # Converting it to LLVM form. This step can also be used to combine multiple profraw files,
 # in case you want to include different profile runs together.
