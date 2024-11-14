@@ -129,11 +129,11 @@ static RegisterPass<RegMappingPass> X("reg-mapping", "Register Mapping Analysis 
 //     LLVM_PLUGIN_API_VERSION, "HW2Pass", "v0.1",
 //     [](PassBuilder &PB) {
 //       PB.registerPipelineParsingCallback(
-//         [](StringRef Name, MachineFunctionPassManager &MFPM,
+//         [](StringRef Name, MachinePassManager &MPM,
 //         ArrayRef<PassBuilder::PipelineElement>) {
 //           if(Name == "print-machine-code"){
 //             // FPM.addPass(HW2CorrectnessPass());
-//             MFPM.addPass(RegMappingPass());
+//             MPM.addPass(RegMappingPass());
 //             return true;
 //           }
 //           return false;
